@@ -9,7 +9,10 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
 }
-
+body{
+  background: linear-gradient(#091F3F,#3968A1 );
+  color: white;
+}
 header{
     display: flex;
     justify-content: center;
@@ -23,14 +26,15 @@ header{
     justify-content: center;
     width: 50%;
     text-align: center;
-    margin: 20px auto;
-    border: 4px dashed black;
+    margin: 15px auto;
+    border: 4px dashed white;
     border-radius: 40px;
     padding: 10px;
 }
 .box-information, h2, h3{
     padding: 10px;
 }
+
 
 .scorebord{
     display: flex;
@@ -40,7 +44,7 @@ header{
     height: auto;
     text-align: center;
     margin: 20px auto;
-    border: 4px groove black;
+    border: 4px groove whitesmoke;
     padding: 10px;
 }
 
@@ -63,4 +67,38 @@ table th, td {
   footer{
     display: flex;
     justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .box-information{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      margin: 15px auto;
+      border: 4px dashed white;
+      border-radius: 40px;
+      
+  }
+    .box-information, h2, h3{
+      padding: 5px;
+      
+  }
+  .scorebord{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 20px auto;
+    border: 4px groove whitesmoke;
+    
+}
+table th, td {
+  border: 1px solid black;
+  width: 100vw;
+}
+  
   }

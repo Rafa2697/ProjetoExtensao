@@ -1,4 +1,4 @@
-export default [
+ export default [
   {
     question: "O que é CPF e qual sua importância?",
     answers: [
@@ -161,6 +161,48 @@ export default [
     answers: [
       { option: "Não, pois o produto ainda será o mesmo, apenas com algumas mudanças.", correct: false },
       { option: "Sim, podendo estar relacionada a outros crimes como sonegação de impostos, lavagem de dinheiro, corrupção, dentre outros.", correct: true },
+    ],
+  },
+  {
+    question: "O que é restituição?",
+    answers: [
+      { option: "É o valor que o contribuinte recebe quando, na entrega da declaração, é constatado que pagou mais do que deveria no período declarado.", correct: true },
+      { option: "Multa que o contribuinte recebe quando erra em sua declaração.", correct: false },
+    ],
+  },
+  {
+    question: "O que é CND?",
+    answers: [
+      { option: "Certidão Negativa de Débitos, documento que certifica não constarem pendências (por isso o termo negativa) em nome da pessoa física ou jurídica.", correct: true },
+      { option: "Cadastro Nacional de Deficientes, documento que garante a qualquer portador de deficiencia física seus direitos.", correct: false },
+    ],
+  },
+  {
+    question: "Qual o destino das mercadorias apreendidas?",
+    answers: [
+      { option: "São destruidas.", correct: false },
+      { option: "Podem ter quatro destinos, sendo: leilão, doação, incorporação e, no caso das mercadorias impróprias, destruição..", correct: true },
+    ],
+  },
+  {
+    question: "O que é renuncia fiscal?",
+    answers: [
+      { option: "Quando o poder público começa a arrecadar tributos através de isenções de diminuição de alíquotas (percentual), dentre outros.", correct: false },
+      { option: "Quando o poder público deixa de arrecadar tributos através de isenções de diminuição de alíquotas (percentual), dentre outros.", correct: true },
+    ],
+  },
+  {
+    question: "O que é MEI?",
+    answers: [
+      { option: "Micro Empresa Independente, uma empresa de pequeno porte.", correct: false },
+      { option: "Microempreendedor individual, um pequeno empresário que se formaliza, tendo um CNPJ.", correct: true },
+    ],
+  },
+  {
+    question: "Qual é a cota de isenção de impostos na bagagem em viagens terrestres?",
+    answers: [
+      { option: "US$500, caso os itens estejam dentro do conceito de bagagem.", correct: true },
+      { option: "US$300, caso os itens estejam dentro do conceito de bagagem.", correct: false },
     ],
   },
   

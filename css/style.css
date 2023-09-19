@@ -14,7 +14,7 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 5px;
-  background: linear-gradient(90deg, rgba(91,30,159,1) 0%, rgba(77,39,182,1) 100%);
+  background: linear-gradient(#091F3F,#3968A1,#80D1F4 );
 }
 
 body h2 {
@@ -63,11 +63,31 @@ button {
 }
 
 .finish {
-  display: none;
+  display: block;
   flex-direction: column;
   gap: 10px;
 }
 
 .finish button {
   text-align: center;
+}
+
+.voltar{
+  width: 10%;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  border: darkred;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color:brown;
+  color: white;
+  font-size: larger;
+}
+
+@media (max-width: 768px){
+  .voltar{
+    width: 200px;
+    margin: 20px;
+  }
 }
