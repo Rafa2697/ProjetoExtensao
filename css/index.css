@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after{
+    
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.box-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+    border: 4px dashed black;
+    border-radius: 40px;
+    padding: 10px;
+}
+.box-information, h2, h3{
+    padding: 10px;
+}
+
+.scorebord{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: 20px auto;
+    border: 4px groove black;
+    padding: 10px;
+}
+
+table th, td {
+    border: 1px solid black;
+    width: 200vw;
+  }
+
+  .botao{
+    display: flex;
+    justify-content: center;
+  }
+  .botao > a button{
+    font-size: large;
+    padding: 10px;
+    background-color: cadetblue;
+    color: aliceblue;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+  }
