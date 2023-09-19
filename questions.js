@@ -198,6 +198,7 @@
       { option: "Microempreendedor individual, um pequeno empresário que se formaliza, tendo um CNPJ.", correct: true },
     ],
   },
+  //inserir pergunta e respostas.
   {
     question: "Qual é a cota de isenção de impostos na bagagem em viagens terrestres?",
     answers: [
