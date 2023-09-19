@@ -40,6 +40,14 @@ main {
   gap: 10px;
 }
 
+.question{
+  text-align: center;
+  color: #091F3F;
+  font-weight: 600;
+  font-size: x-large;
+  padding: 10px;
+}
+
 .spnQtd {
   text-align: end;
 }
@@ -63,31 +71,41 @@ button {
 }
 
 .finish {
-  display: block;
+  display: none;
   flex-direction: column;
   gap: 10px;
+  width: 20%;
 }
 
 .finish button {
   text-align: center;
 }
-
-.voltar{
-  width: 10%;
+.inicio{
+  display: block;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+  
+}
+.inicio button {
   text-align: center;
-  text-decoration: none;
-  padding: 10px;
-  border: darkred;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color:brown;
-  color: white;
-  font-size: larger;
 }
 
+
+.botoes{
+  display: flex;
+  gap: 10px;
+  width: 30%;
+  justify-content: center;
+  
+}
 @media (max-width: 768px){
-  .voltar{
-    width: 200px;
-    margin: 20px;
+  
+  .inicio{
+    display: block;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    
   }
 }
