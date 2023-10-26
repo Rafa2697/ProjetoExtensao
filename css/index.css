@@ -13,6 +13,18 @@ body{
   background: linear-gradient(#091F3F,#3968A1 );
   color: white;
 }
+.titulo{
+  
+  animation-name: nometitulo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes nometitulo {
+  from {color: white;}
+  to{color: yellow;}
+}
 header{
     display: flex;
     justify-content: center;
@@ -56,12 +68,22 @@ table th, td {
   .botao{
     display: flex;
     justify-content: center;
+   
   }
+
+  @keyframes colorbotao {
+    from{background-color: rgba(255, 217, 0, 0.651);}
+    to{background-color: mediumblue;}
+  }
+
   .botao > a button{
     font-size: large;
     padding: 10px;
     background-color: cadetblue;
     color: aliceblue;
+    animation-name: colorbotao;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   }
 
   footer{
@@ -99,6 +121,7 @@ table th, td {
 table th, td {
   border: 1px solid black;
   width: 100vw;
+  border-radius: 10px;
 }
   
   }
