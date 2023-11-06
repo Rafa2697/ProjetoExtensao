@@ -11,7 +11,6 @@ import questions from "./questions.js";
 let currentIndex = 0; //index da questão atual
 let questionsCorrect = 0; //quantidade de acertos
 
-
 btnRestart.onclick = () => {
   content.style.display = "flex";
   contentFinish.style.display = "none";
@@ -31,7 +30,7 @@ function nextQuestion(e) {
     currentIndex++;
     loadQuestion();
   } else {
-    finish();
+    finish()
   }
 }
 // essa função atribui ao span a quantidade de acertos da quantidade de questões. 
@@ -40,6 +39,8 @@ function finish() {
   content.style.display = "none";
   contentFinish.style.display = "flex";
 }
+
+
 
 function loadQuestion() {
   spnQtd.innerHTML = `${currentIndex + 1}/${questions.length}`;
@@ -66,3 +67,4 @@ function loadQuestion() {
 }
 
 loadQuestion();
+

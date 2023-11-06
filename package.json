@@ -1,0 +1,18 @@
+{
+  "name": "projetoextensao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "server.js",
+    "dev": "node --watch --no-warnings server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.24.3",
+    "tedious": "^16.6.0"
+  }
+}
