@@ -7,8 +7,12 @@
   const textFinish = document.querySelector(".finish span");
   const content = document.querySelector(".content");
   const contentFinish = document.querySelector(".finish");
-  const btnRestart = document.querySelector(".finish button");
+  const btnRestart = document.querySelector(".finish .reiniciar");
+  const btnGuardarNome = document.querySelector(".finish .guardar")
+  const nomePrimeiro = document.querySelector('#nome_01')
+  const scorePrimero = document.querySelector('#score_01')
   
+
   import questions from "./questions.js";
   
   let currentIndex = 0; //index da questão atual
@@ -36,13 +40,30 @@
       finish()
     }
   }
+
+ 
   // essa função atribui ao span a quantidade de acertos da quantidade de questões. 
   function finish() { 
+    
     textFinish.innerHTML = `você acertou ${questionsCorrect} de ${questions.length}`;
     content.style.display = "none";
     contentFinish.style.display = "flex";
+    
   }
+
+  //quando o usuario clicar em finalizae essa função fica responsavel pelo evento do clique e retorna o nome e a quantidade de respotas corretas
+  function nomeJogador(){
+    
+    btnGuardarNome.addEventListener('click', function(){
+      const nome = document.getElementById('nome').value
+      
+      console.log(questionsCorrect)
+      console.log(nome)
+    })
+  }
+  nomeJogador()
   
+
   
   
   function loadQuestion() {

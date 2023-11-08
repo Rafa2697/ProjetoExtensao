@@ -1,0 +1,23 @@
+POST http://localhost:3333/jogadores
+Content-Type: application/json
+
+{
+    "name": "jogador 01",
+    "score": 20
+}
+
+###
+GET http://localhost:3333/jogadores?search=rafael
+
+###
+PUT http://localhost:3333/jogadores/35bd4d50-e0b6-4817-8535-8a3392fc8efa
+Content-Type: application/json
+
+{
+    "name": "rafael",
+    "score": 10
+}
+
+###
+
+DELETE http://localhost:3333/jogadores/4f3bd12b-60cc-4b5a-a0c1-0acec980fb2e

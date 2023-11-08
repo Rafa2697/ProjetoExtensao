@@ -87,6 +87,16 @@ button {
 .finish button {
   text-align: center;
 }
+.finish input{
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.274);
+  border-radius: 3px;
+  padding: 5px;
+  background-color:rgba(100, 148, 237, 0.071);
+  text-align: center;
+}
 .inicio{
   display: block;
   flex-direction: column;

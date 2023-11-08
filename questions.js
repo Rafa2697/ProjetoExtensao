@@ -1,6 +1,6 @@
  export default [
   {
-    question: "O que é CPF e qual sua importância?",
+    question: "O que é contrabando?", //questão 01
     answers: [
       { option: "Cadastro de pessoas nacionais, armazena informações apenas de brasileiros", correct: true },
       { option: "Cadastro de pessoas físicas, registro que armazena informações cadastrais de todos os cidadãos inscritos e é gerenciado pela receita federal.", correct: false },
@@ -8,26 +8,29 @@
     ],
   },
   {
-    question: "O que é contrabando?",
+    question: "O que é a aduana?", //questão 02
     answers: [
-      { option: "Importar ou exportar mercadorias proíbidas no País.", correct: false },
-      { option: "Vender mercadorias proíbidas.", correct: true },
+      { option: "Importar mercadorias autorizadas no País.", correct: false },
+      { option: "Importar ou exportar mercadorias proibidas no País.", correct: true },
+      { option: "Exportar mercadorias autorizadas no País.", correct: false},
       
     ],
   },
   {
-    question: "Qual a diferença entre tributo e imposto?",
+    question: "O que é descaminho?",  //questão 03
     answers: [
-      { option: "Tributo é gênero, imposto é espécie, ou seja, imposto é um tipo de tributo. Outros exemplos de tributo são: taxas e contruições.", correct: true },
-      { option: "Tributo é uma doação, imposto é obrigatório pagar.", correct: false },
+      { option: "Importar, exportar ou consumir mercadorias permitidas no País, mas sem o pagamento dos impostos", correct: true },
+      { option: "Consumir mercadorias permitidas no País", correct: false },
+      { option: "Importar mercadorias permitidas no País, mas com o pagamento dos impostos.", correct: false},
       
     ],
   },
   {
-    question: "Qual a importancia do CNPJ para o consumidor?",
+    question: "Qual a importancia do CNPJ para o consumidor?", //questão 04
     answers: [
-      { option: "Identificar a veracidade do seu negócio.", correct: false },
-      { option: "Adquirir produtos e serviços de empresas devidamente formalizadas ajuda a garantir seus direitos de consumidor.", correct: true },
+      { option: "Bens legítimos, que são fabricados e distribuídos com a autorização dos detentores dos direitos de propriedade intelectual.", correct: false },
+      { option: "Qualquer reprodução ou uso não autorizado de marcas registradas, conhecido como pirataria.", correct: true },
+      { option: "Qualquer reprodução ou uso autorizado de marcas registradas", correct: false}
       
     ],
   },
