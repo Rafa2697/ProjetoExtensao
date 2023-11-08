@@ -10,14 +10,15 @@
 //server com framework fastify
 
 import {fastify} from 'fastify'
-
-import {questionsCorrect} from './script.js'
+import { DatabaseMemory, databaseMemory } from './database-memory.js'
+// import {questionsCorrect} from './script.js'
 
 const server = fastify()
+const database = new DatabaseMemory()
 
 //rotas
-server.get('/', () =>{
-    console.log(questionsCorrect)
+server.post('/', () =>{
+    console.log("teste")
 })
 
 server.listen({
