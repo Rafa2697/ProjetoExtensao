@@ -7,7 +7,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3333/jogadores?search=rafael
+GET http://localhost:3333/jogadores?search=
 
 ###
 PUT http://localhost:3333/jogadores/35bd4d50-e0b6-4817-8535-8a3392fc8efa

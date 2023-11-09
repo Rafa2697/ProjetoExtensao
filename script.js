@@ -57,14 +57,13 @@
     btnGuardarNome.addEventListener('click', function(){
       const nome = document.getElementById('nome').value
       
-      console.log(questionsCorrect)
-      console.log(nome)
+      
+
+      alert(`Parabens ${nome}, sua pontuação foi ${questionsCorrect}`)
     })
   }
   nomeJogador()
-  
-
-  
+  export {nome, questionsCorrect}
   
   function loadQuestion() {
     spnQtd.innerHTML = `${currentIndex + 1}/${questions.length}`;

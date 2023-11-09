@@ -11,13 +11,16 @@
 
 import { fastify } from 'fastify'
 import { DatabaseMemory } from './database-memory.js'
-import { request } from 'node:http'
-// import {questionsCorrect} from './script.js'
+// import { request } from 'node:http'
+//import {questionsCorrect} from './script.js'
+
 
 const server = fastify()
 const database = new DatabaseMemory()
 
 //rotas
+
+//cria
 server.post('/jogadores', async (request, reply) => {
    
     const {name, score} = request.body
@@ -32,6 +35,7 @@ server.post('/jogadores', async (request, reply) => {
     return reply.status(201).send()
 })
 
+//busca
 server.get('/jogadores', (request, reply) => {
     const search = request.query.search
 
@@ -40,6 +44,7 @@ server.get('/jogadores', (request, reply) => {
     return jogadores
 })
 
+//atualiza
 server.put('/jogadores/:id', (request, reply) => {
     const jogadorId = request.params.id
     const { name, score} = request.body
@@ -50,6 +55,7 @@ server.put('/jogadores/:id', (request, reply) => {
     })
 })
 
+//deleta
 server.delete('/jogadores/:id', (request,reply) => {
     const jogadorId = request.params.id
     database.delete(jogadorId)
