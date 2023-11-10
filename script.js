@@ -63,7 +63,7 @@
     })
   }
   nomeJogador()
-  export {nome, questionsCorrect}
+  
   
   function loadQuestion() {
     spnQtd.innerHTML = `${currentIndex + 1}/${questions.length}`;
