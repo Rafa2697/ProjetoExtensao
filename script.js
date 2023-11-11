@@ -11,9 +11,10 @@
   const btnGuardarNome = document.querySelector(".finish .guardar")
   const nomePrimeiro = document.querySelector('#nome_01')
   const scorePrimero = document.querySelector('#score_01')
-  
+
 
   import questions from "./questions.js";
+
   
   let currentIndex = 0; //index da questão atual
   let questionsCorrect = 0; //quantidade de acertos
@@ -53,7 +54,7 @@
 
   //quando o usuario clicar em finalizae essa função fica responsavel pelo evento do clique e retorna o nome e a quantidade de respotas corretas
   function nomeJogador(){
-    
+    const nome = document.getElementById('nome').value
     btnGuardarNome.addEventListener('click', function(){
       const nome = document.getElementById('nome').value
       

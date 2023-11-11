@@ -20,6 +20,10 @@ const database = new DatabaseMemory()
 
 //rotas
 
+server.get("/", function(req, replay){
+    replay.sendFile(__dirname + "/index.html")
+})
+
 //cria
 server.post('/jogadores', async (request, reply) => {
    
