@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Fiscal</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*,
+*::before,
+*::after{
+    
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+body{
+  background: linear-gradient(#091F3F,#3968A1 );
+  color: white;
+}
+.titulo{
+  
+  animation-name: nometitulo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes nometitulo {
+  from {color: white;}
+  to{color: yellow;}
+}
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+}
+
+.box-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    margin: 15px auto;
+    border: 4px dashed white;
+    border-radius: 40px;
+    padding: 10px;
+}
+.box-information, h2, h3{
+    padding: 10px;
+}
+
+
+.scorebord{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: 20px auto;
+    border: 4px groove whitesmoke;
+    padding: 10px;
+}
+
+table th, td {
+    border: 1px solid black;
+    width: 200vw;
+  }
+
+  .botao{
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  @keyframes colorbotao {
+    from{background-color: rgba(255, 217, 0, 0.651);}
+    to{background-color: mediumblue;}
+  }
+
+  .botao > a button{
+    font-size: large;
+    padding: 10px;
+    background-color: cadetblue;
+    color: aliceblue;
+    animation-name: colorbotao;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .box-information{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      margin: 15px auto;
+      border: 4px dashed white;
+      border-radius: 40px;
+      
+  }
+    .box-information, h2, h3{
+      padding: 5px;
+      
+  }
+  .scorebord{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 20px auto;
+    border: 4px groove whitesmoke;
+    
+}
+table th, td {
+  border: 1px solid black;
+  width: 100vw;
+  border-radius: 10px;
+}
+  
+  }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Quiz <br> Educação Fiscal</h1>
+    </header>
+    <main>
+            <section class="box-information">
+                <h2>São 30 perguntas de 3 temas diferentes: <br><span style="color: orangered;">Aduana, geral e tributos.</span></h2>
+                <h3>Divirta-se tentando responder todas corretamente.</h3>
+            </section><!--box-information-->
+            <section class="scorebord">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>RANKING</th>
+                            <th>NOME</th>
+                            <th>SCORE</th>
+                        </tr>
+                    </thead> 
+                    <tbody>
+                            <tr>
+                                <td>1°</td>
+                                <td id="nome_01">-</td>
+                                <td id="score_01">0</td>
+                            </tr>
+                            <tr>
+                                <td>2°</td>
+                                <td id="nome_01">-</td>
+                                <td id="score_01">0</td>
+                            </tr>
+                            <tr>
+                                <td>3°</td>
+                                <td id="nome_01">-</td>
+                                <td id="score_01">0</td>
+                            </tr>
+                            <tr>
+                                <td>4°</td>
+                                <td id="nome_01">-</td>
+                                <td id="score_01">0</td>
+                            </tr>
+                    </tbody>
+                        
+                </table>
+            </section><!--scorebord-->
+           
+
+             <div class="botao">
+                <a href="perguntas.html"><button>Iniciar Jogo</button></a>
+            </div>
+
+    </main>
+    
+</body>
+<footer>
+    <div >
+        <p style="display: inline-block; text-align: center;">&copy;UNISEPE</p>
+    </div>
+</footer>
+<script src="script.js" type="module"></script>
+
+
+</html>

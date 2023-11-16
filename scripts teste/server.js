@@ -21,7 +21,7 @@ const database = new DatabaseMemory()
 //rotas
 
 server.get("/", function(req, replay){
-    replay.sendFile(__dirname + "/index.html")
+    // replay.sendFile(__dirname + "/index.html")
 })
 
 //cria

@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QUIZ</title>
 
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+
 
   <h2>Quiz Educação Fiscal</h2>
   <main>
@@ -21,7 +23,7 @@
       <span></span>
       <p><input type="text" name="nome" id="nome" placeholder="Digite seu nome ..."></p>
       <button class="reiniciar">Reiniciar</button>
-      <button class="guardar">Finalizar</button>
+      <button class="guardar" onclick="enviarDB()">Finalizar</button>
     </div>
   </main>
   <div class="botoes">
@@ -32,6 +34,6 @@
     </div>
   </div><!--botoes-->
   <script src="script.js" type="module"></script>
-  <script type="module" src="server.js"></script>
+  
 </body>
 </html>
