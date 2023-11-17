@@ -1,3 +1,4 @@
+const { response } = require("express");
 
 
 const questions = [  
@@ -284,10 +285,25 @@ const questions = [
       
 
       alert(`Parabens ${nome}, sua pontuação foi ${questionsCorrect}`)
+      module.exports = {nome, questionsCorrect}
+
+      fetch('http://localhost:3000/teste', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({nome, questionsCorrect}),
+      })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch((error) => {
+        console.error('erro:', error);
+      })
     })
   }
   nomeJogador()
 
+  
   
   
   function loadQuestion() {
