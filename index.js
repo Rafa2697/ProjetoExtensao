@@ -21,10 +21,10 @@ app.get("/", (req, res) => {
     
 });
 
-app.get("/teste", (req, res) => {
-
-    console.log(req.body.nome); // Imprime "valor da minha variável"
-    res.json({ message: 'Dados recebidos!' });
+app.post("/teste", (req, res) => {
+    
+    console.log(req.body.valor)
+    res.json({ message: 'Recebido!' });
 });
 
 
