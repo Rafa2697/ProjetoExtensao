@@ -10,24 +10,30 @@ const jogadores = require('./jogadores');
 const fetch = require('node-fetch-commonjs');
 // const {nome} = require('./public/script')
 
- app.use(express.static('public'));
+app.use(express.static('public'));
 // app.use('/static', express.static('public'));
 app.use(express.json());
-app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 //rotas
 app.get("/", (req, res) => {
-    res.sendFile('public/index.html', {root: __dirname});
-    
+    res.sendFile('public/index.html', { root: __dirname });
+
 });
 
 app.post("/teste", (req, res) => {
-    
-    console.log(req.body.valor)
-    res.json({ message: 'Recebido!' });
+
+    jogadores.create({
+        nome: req.body.nome,
+        score: req.body.score
+    }).then(function(){
+        res.redirect('/')
+    }).catch(function(erro){
+        res.send('houve um erro: ' + erro)
+    })
 });
 
 
-app.listen(port, () =>{
+app.listen(port, () => {
     console.log(`Conectado na porta ${port}`);
 });
