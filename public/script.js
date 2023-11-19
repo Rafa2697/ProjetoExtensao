@@ -312,6 +312,9 @@ function finish() {
   contentFinish.style.display = "flex";
 
 }
+function inicio(){
+  window.location.href = 'index.js'
+}
 
 //quando o usuario clicar em finalizae essa função fica responsavel pelo evento do clique e retorna o nome e a quantidade de respotas corretas
 function nomeJogador() {
@@ -321,7 +324,7 @@ function nomeJogador() {
 
     
     alert(`Parabens ${nome}, sua pontuação foi ${questionsCorrect}`)
-    // module.exports = { nome, questionsCorrect }
+
     const xhr = new XMLHttpRequest();
     xhr.open('POST', 'http://localhost:3000', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
@@ -342,8 +345,10 @@ function nomeJogador() {
       console.error('erro:', error);
     })
   })
+
 }
 nomeJogador()
+
 
 
 

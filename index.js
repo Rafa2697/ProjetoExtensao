@@ -16,13 +16,13 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 //rotas
-app.get("/", (req, res) => {
+app.get("/", (req, res) => { // rota onde mostra a interface do programa para o usuario. 
     
     res.sendFile('public/index.html', { root: __dirname });
 
 });
 
-app.post("/", (req, res) => {
+app.post("/", (req, res) => { //rota principal POST onde criamos mais um jogador no banco de dados
     console.log(req.body.numero)
     console.log(req.body.string)
 
@@ -36,7 +36,7 @@ app.post("/", (req, res) => {
     })
 });
 
-app.get('/dados', (req, res) => {
+app.get('/dados', (req, res) => { //rota que retorna os dados em ordem decrecente e com limite de 3, mostrando sempre o maior numero.
     jogadores.findAll({
         order: [
             ['score', 'DESC']
