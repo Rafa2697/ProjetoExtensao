@@ -177,46 +177,83 @@ const questions = [
   },
   //tributos
   {
-    question: "O que é restituição?", //questão 01
+    question: "O que significa 'tributo' ?", //questão 01
+    answers: [
+      { option: "TTributo são benéficos de seguro de vida.", correct: false },
+      { option: "Multa que o contribuinte recebe quando erra em sua declaração.", correct: false },
+      { option: "Tributo é um valor ou imposto que as pessoas e empresas devem pagar ao governo.", correct: true}
+    ],
+  },
+  {
+    question: "Qual é a função dos tributos?", //questão 02
+    answers: [
+      { option: "Realização de políticas sociais de saúde, educação, segurança, seguridade social e investimentos em infraestrutura.", correct: true },
+      { option: "Distribuem rendas as empresas e comércios.", correct: false },
+      {option: "Estimular ou desacelerar a atividade econômica.", correct: false}
+    ],
+  },
+  {
+    question: "Qual a diferença entre tributo e imposto?", //questão 03
+    answers: [
+      { option: "Taxa é um tipo de imposto e tributo é o valor total.", correct: false },
+      { option: "Tributo é gênero, imposto é espécie, ou seja, imposto é um tipo de tributo", correct: true },
+      { option: "Tributo é espécie, imposto é o valor, ou seja, imposto é um tipo de conta. ", correct: false}
+    ],
+  },
+  {
+    question: "O que é sonegação?", //questão 04
+    answers: [
+      { option: "Cometer erros ou equívocos na declaração de impostos, desde que sejam honestos e não intencionais", correct: false },
+      { option: "Utilizar estratégias legais para minimizar sua carga tributária, como aproveitar deduções fiscais, incentivos fiscais ou estruturar suas finanças de acordo com a lei.", correct: false },
+      { option: "Omitir ou fazer declaração incorreta com intenção de deixar de pagar os tributos devidos, sendo essa conduta um crime", correct: true}
+    ],
+  },
+  {
+    question: "Qual é a função da nota fiscal?", //questão 05
+    answers: [
+      { option: "Garantir que a venda do produto será declarada, evitando a sonegação, além de garantir os direitos do consumidor", correct: true },
+      { option: "Não serve para regularização e fiscalização das operações comerciais para combater a sonegação de impostos.", correct: false },
+      { option: "Não comprova a garantia do produto", correct: false}
+    ],
+  },
+  {
+    question: "O que é malha fiscal?", //questão 06
+    answers: [
+      {option: "Não é uma ação específica realizada pelo fisco para garantir o cumprimento das obrigações fiscais e pode resultar em ajustes.", correct: false},
+      { option: "É quando uma declaração apresenta pendências, por informações incorretas, omissão de dados ou necessidade de apresentação de documentos", correct: true},
+      { option: "São atividades ou processos que não envolvem análise de conformidade fiscal", correct: false},
+    ]
+  },
+  {
+    question: "O que é orçamento público?", //questão 07
+    answers: [
+      { option: "Empresas elaboram orçamentos financeiros para planejar suas operações e atividades, controlando receitas e despesas, bem como investimentos e estratégias de crescimento.", correct: false },
+      { option: "Projetos de construção, reparo ou expansão de estruturas físicas podem ter orçamentos específicos para controlar os custos e recursos envolvidos.", correct: false },
+      { option: "É um compromisso, por meio de lei, entre governo e sociedade, com a previsão de receitas e despesas públicas.", correct: true},
+    ],
+  },
+  {
+    question: "O que é restituição?", //questão 08
     answers: [
       { option: "É o valor que o contribuinte recebe quando, na entrega da declaração, é constatado que pagou mais do que deveria no período declarado.", correct: true },
-      { option: "Multa que o contribuinte recebe quando erra em sua declaração.", correct: false },
+      { option: "Um empréstimo envolve a transferência de dinheiro de um credor para um devedor", correct: false },
+      { option: "Quando se recebe dinheiro por bens ou serviços prestados", correct: false},
     ],
   },
   {
-    question: "O que é CND?",
+    question: "O que é carga tributária? ", //questão 09
     answers: [
-      { option: "Certidão Negativa de Débitos, documento que certifica não constarem pendências (por isso o termo negativa) em nome da pessoa física ou jurídica.", correct: true },
-      { option: "Cadastro Nacional de Deficientes, documento que garante a qualquer portador de deficiencia física seus direitos.", correct: false },
+      { option: "Os juros e multas aplicados a atrasos no pagamento de tributos são parte da carga tributária, mas não são penalidades adicionais", correct: false },
+      { option: "É a relação entre a soma da arrecadação total e o Produto Interno Bruto, e visa analisar o fluxo de recursos financeiros da sociedade para o Estado.", correct: true },
+      { option: "O custo de bens e serviços que inclui impostos indiretos, como o Imposto sobre Valor Adicionado (IVA).", correct: false},
     ],
   },
   {
-    question: "Qual o destino das mercadorias apreendidas?",
+    question: "Quem pode destinar parte de seu imposto para os fundos do Direito da Criança e do Adolescente?    ", //questão 10
     answers: [
-      { option: "São destruidas.", correct: false },
-      { option: "Podem ter quatro destinos, sendo: leilão, doação, incorporação e, no caso das mercadorias impróprias, destruição..", correct: true },
-    ],
-  },
-  {
-    question: "O que é renuncia fiscal?",
-    answers: [
-      { option: "Quando o poder público começa a arrecadar tributos através de isenções de diminuição de alíquotas (percentual), dentre outros.", correct: false },
-      { option: "Quando o poder público deixa de arrecadar tributos através de isenções de diminuição de alíquotas (percentual), dentre outros.", correct: true },
-    ],
-  },
-  {
-    question: "O que é MEI?",
-    answers: [
-      { option: "Micro Empresa Independente, uma empresa de pequeno porte.", correct: false },
-      { option: "Microempreendedor individual, um pequeno empresário que se formaliza, tendo um CNPJ.", correct: true },
-    ],
-  },
-  //inserir pergunta e respostas.
-  {
-    question: "Qual é a cota de isenção de impostos na bagagem em viagens terrestres?",
-    answers: [
-      { option: "US$500, caso os itens estejam dentro do conceito de bagagem.", correct: true },
-      { option: "US$300, caso os itens estejam dentro do conceito de bagagem.", correct: false },
+      { option: "EQualquer pessoa física ou jurídica pode destinar parte do seu imposto devido para os fundos do Direito da Criança e do Adolescente.", correct: true },
+      { option: "Aqueles que optam pela declaração simplificada, que não permite deduções de impostos, podem não ter o valor devido necessário para fazer a destinação", correct: false },
+      { option: "Nenhuma pessoa física ou jurídica pode destinar parte do seu imposto devido para os fundos do Direito da Criança e do Adolescente. ", correct: false},
     ],
   },
 
@@ -282,28 +319,28 @@ function nomeJogador() {
   btnGuardarNome.addEventListener('click', function () {
     const nome = document.getElementById('nome').value
 
-    let teste = 'testado'
+    
     alert(`Parabens ${nome}, sua pontuação foi ${questionsCorrect}`)
-    module.exports = { nome, questionsCorrect }
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://localhost:3000/teste', true);
+    // module.exports = { nome, questionsCorrect }
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'http://localhost:3000', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify({
       numero: questionsCorrect,
-      string: teste
+      string: nome
     }));
-    // fetch('/teste', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify({valor: teste}),
-    // })
-    // .then((response) => response.json())
-    // .then(data => console.log(data))
-    // .catch((error) => {
-    //   console.error('erro:', error);
-    // })
+    fetch('/teste', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({valor: nome}),
+    })
+    .then((response) => response.json())
+    .then(data => console.log(data))
+    .catch((error) => {
+      console.error('erro:', error);
+    })
   })
 }
 nomeJogador()

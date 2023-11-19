@@ -1,15 +1,15 @@
 
 const database = require('./database')
-
+const Sequelize = require('sequelize');
 const Jogadores = database.sequelize.define('jogadores',{
     nome:{
-        type: database.Sequelize.STRING
+        type: Sequelize.STRING
     },
     score:{
-        type: database.Sequelize.INTEGER
+        type: Sequelize.INTEGER
     }
 })
 
-//Jogadores.sync({force: true})
+//  Jogadores.sync()
 
-module.exports = {Jogadores};
+module.exports = Jogadores;
