@@ -3,15 +3,15 @@
 
 const questions = [
   {
-    question: "O que é contrabando?", //questão 01
+    question: "O que é aduana?", //questão 01
     answers: [
-      { option: "Cadastro de pessoas nacionais, armazena informações apenas de brasileiros", correct: true },
-      { option: "Cadastro de pessoas físicas, registro que armazena informações cadastrais de todos os cidadãos inscritos e é gerenciado pela receita federal.", correct: false },
-      { option: "Documento de Identidade, que garante os direitos ao cidadão.", correct: false },
+      { option: "A aduana é uma agência de aolicação de lei.", correct: false},
+      { option: "A aduaba tem poder de prender ou processar criminisos.", correct: false },
+      { option: "A aduaba é o órgão responsavel por controla a entrada e saída de mercadorias e pessoas em um país.", correct: true },
     ],
   },
   {
-    question: "O que é a aduana?", //questão 02
+    question: "O que é contrabando?", //questão 02
     answers: [
       { option: "Importar mercadorias autorizadas no País.", correct: false },
       { option: "Importar ou exportar mercadorias proibidas no País.", correct: true },

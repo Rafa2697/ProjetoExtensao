@@ -10,6 +10,6 @@ const Jogadores = database.sequelize.define('jogadores',{
     }
 })
 
-//  Jogadores.sync()
+//Jogadores.sync()
 
 module.exports = Jogadores;
