@@ -130,8 +130,8 @@ const questions = [
   {
     question: "A qual órgão a receita federal é subordinada?",//questão 05
     answers: [
-      { option: "Ministério da Economia.", correct: false },
-      { option: "Ministério da Educação.", correct: true },
+      { option: "Ministério da Economia.", correct: true },
+      { option: "Ministério da Educação.", correct: false },
       { option: "Ministério do Trabalho e Previdência Social.", correct: false },
     ],
   },
@@ -165,7 +165,7 @@ const questions = [
     answers: [
       { option: "O CNPJ permite aos consumidores verificar informações privadas sobre a empresa, como saldo da conta do comerciante.", correct: false },
       { option: "Adquirir produtos e serviços de empresas devidamente formalizadas ajuda a garantir seus direitos de consumidor.", correct: true },
-      { option: "O principal papel do CNPJ é não regularizar a identificação e a tributação de empresas e outras entidades jurídicas no Brasil.", correct: true },
+      { option: "O principal papel do CNPJ é não regularizar a identificação e a tributação de empresas e outras entidades jurídicas no Brasil.", correct: false},
     ],
   },
   {
