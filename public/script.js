@@ -22,14 +22,14 @@ const questions = [
   {
     question: "O que é descaminho?",  //questão 03
     answers: [
-      { option: "Importar, exportar ou consumir mercadorias permitidas no País, mas sem o pagamento dos impostos", correct: true },
-      { option: "Consumir mercadorias permitidas no País", correct: false },
+      { option: "Importar, exportar ou consumir mercadorias permitidas no País, mas sem o pagamento dos impostos.", correct: true },
+      { option: "Consumir mercadorias permitidas no País.", correct: false },
       { option: "Importar mercadorias permitidas no País, mas com o pagamento dos impostos.", correct: false },
 
     ],
   },
   {
-    question: "Qual a importancia do CNPJ para o consumidor?", //questão 04
+    question: "O que é contrafação?", //questão 04
     answers: [
       { option: "Bens legítimos, que são fabricados e distribuídos com a autorização dos detentores dos direitos de propriedade intelectual.", correct: false },
       { option: "Qualquer reprodução ou uso não autorizado de marcas registradas, conhecido como pirataria.", correct: true },
@@ -38,7 +38,7 @@ const questions = [
     ],
   },
   {
-    question: "Onde se dá a principal atuação da Aduana?",
+    question: "Onde se dá a principal atuação da Aduana?", //questão 05
     answers: [
       { option: "Sua principal atuação é nas fronteiras do país, sendo elas terrestres, aéreas ou portuárias, chamadas de zonas primárias.", correct: true },
       { option: "A aduana geralmente atua em embarcações em alto-mar.", correct: false },
@@ -47,9 +47,10 @@ const questions = [
     ],
   },
   {
-    question: "O que faz a Aduana?",
+    question: "O que faz a Aduana?", //questão 06
     answers: [
-      { option: "A aduana pode controlar e fiscalizar o fluxo internacional de bens, mercadorias e veículos. ", correct: true },
+      {option: "A aduana pode violar os direitos humanos dos indivíduos que estão sendo inspecionados ou controlados. ", correct: false},
+      { option: "A aduana pode controlar e fiscalizar o fluxo internacional de bens, mercadorias e veículos. ", correct: false },
       { option: "A aduana pode confiscar bens ou mercadorias sem uma base legal válida, como provas de que as regulamentações alfandegárias foram violadas.", correct: false },
 
     ],
