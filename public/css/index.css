@@ -73,14 +73,22 @@ header{
     height: auto;
     text-align: center;
     margin: 30px auto;
-    border: 4px groove whitesmoke;
-    padding: 10px;
+    /* border: 4px groove whitesmoke; */
+  
 }
 
 table th, td {
-    border: 1px solid black;
+  border: none;
+    /* border: 1px solid black; */
+    border-top: none;
+    border-left:none ;
+    border-right: none;
+    border-bottom: 2px solid black ;
+    margin: 10px;
+    padding: 10px;
     width: 200vw;
     margin: 30px;
+    font-size: 20px
   }
 
   .botao{
@@ -148,13 +156,12 @@ table th, td {
     height: auto;
     text-align: center;
     margin: 20px auto;
-    border: 4px groove whitesmoke;
+  
     
 }
 table th, td {
-  border: 1px solid black;
   width: 100vw;
-  border-radius: 10px;
+  border-right: none;
 }
 
 footer{
