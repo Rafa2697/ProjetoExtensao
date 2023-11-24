@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
+  font-family: 'Quantico', sans-serif;
 }
 
 body {
@@ -14,11 +14,13 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 5px;
-  background: linear-gradient(#091F3F,#3968A1,#80D1F4 );
+  background: linear-gradient(#091F3F,#3968A1 );
+  background-image: url('../img/fundo\ 2.png');
 }
 
 
 body h2 {
+  
   color: white;
 }
 
@@ -98,21 +100,32 @@ button {
   text-align: center;
 }
 .inicio{
-  display: block;
-  flex-direction: column;
-  gap: 10px;
-  width: 30%;
-  
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  width: 20%;
+  margin-top: 10px;
 }
 .inicio button {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+    background: linear-gradient(180deg, #3CC0F3 60.16%, #1E88EB 160.16%);
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+    transition: font-size 0.5s ease-in-out;
+    text-align: center;
 }
 
 
 .botoes{
   display: flex;
   gap: 10px;
-  width: 30%;
+  width: 10%;
   justify-content: center;
   
 }
