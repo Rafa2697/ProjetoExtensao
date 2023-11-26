@@ -8,12 +8,17 @@
     font-family: 'Quantico', sans-serif;
 }
 html{
+  
   height: 100%;
+  min-height: 100%;
 }
 body{
   background: linear-gradient(#091F3F,#3968A1 );
   background-image: url('../img/fundo\ 2.png');
   color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 main{
   padding-bottom: 20px;
@@ -125,11 +130,11 @@ table th, td {
   }
 
   footer{
-    position: absolute;
-    bottom: 0;
+    
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-top: auto;
   }
 
   @media (max-width: 768px) {
@@ -162,6 +167,11 @@ table th, td {
 table th, td {
   width: 100vw;
   border-right: none;
+}
+
+.botao > a button{
+  font-size: 20px;
+  width: 150px;
 }
 
 footer{

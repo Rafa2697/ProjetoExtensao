@@ -352,9 +352,6 @@ nomeJogador()
 
 
 
-
-
-
 function loadQuestion() {
   spnQtd.innerHTML = `${currentIndex + 1}/${questions.length}`;
   const item = questions[currentIndex];
