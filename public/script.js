@@ -324,7 +324,7 @@ function nomeJogador() {
     const nome = document.getElementById('nome').value
 
     
-    alert(`Parabens ${nome}, sua pontuação foi será armazenda em nosso banco de dados.`)
+    alert(`Parabens ${nome}, sua pontuação foi armazenda em nosso banco de dados.`)
 
     const xhr = new XMLHttpRequest();
     xhr.open('POST', 'http://localhost:3000', true);

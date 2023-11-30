@@ -124,10 +124,10 @@ table th, td {
     transition: font-size 0.5s ease-in-out;
   }
 
-  .botao > a button:hover{
+  /* .botao > a button:hover{
     font-size: 40px;
     
-  }
+  } */
 
   footer{
     
@@ -181,4 +181,9 @@ footer{
   display: none;
   justify-content: space-around;
 }
+
+/* .botao > a button:hover{
+  font-size: 30px;
+  
+} */
   }
