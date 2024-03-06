@@ -317,7 +317,7 @@ function inicio(){
   window.location.href = 'index.js'
 }
 
-//quando o usuario clicar em finalizae essa função fica responsavel pelo evento do clique e retorna o nome e a quantidade de respotas corretas
+//quando o usuario clicar em finalizar, essa função fica responsavel pelo evento do clique e retorna o nome e a quantidade de respotas corretas
 function nomeJogador() {
 
   btnGuardarNome.addEventListener('click', function () {

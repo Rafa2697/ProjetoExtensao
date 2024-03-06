@@ -1,3 +1,5 @@
 #express
 #sequelize
 #mysql
+
+#para iniciar o projeto "nodemon index.js"
