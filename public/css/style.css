@@ -16,6 +16,7 @@ body {
   gap: 5px;
   background: linear-gradient(#091F3F,#3968A1 );
   background-image: url('../img/fundo\ 2.png');
+  background-size: cover;
 }
 
 
