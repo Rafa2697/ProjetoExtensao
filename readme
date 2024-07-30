@@ -1,15 +1,10 @@
 
-# Quiz educação fiscal
+Quiz educação fiscal
+Primeiro projeto do curso de Analise e desenvolivimento de sistemas.
 
-Primeiro projeto do curso de Analise e desenvolivimento de sistemas. 
+Esse projeto foi feito em parceria com as turmas do curso de administralção da UNISEPE, nele o usuario responde 30 perguntas desenvolvidas pelos alunos de administração, ao final do quiz, o usuario coloca seu nome e salva o resultado, que sera exibido entre os tres primeiros colocados.
 
-Esse projeto foi feito em parceria com as turmas do curso de administralção da UNISEPE, nele o usuario responde 30 perguntas desenvolvidas pelos alunos de administração, ao final do quiz, o usuario coloca seu nome e salva o resultado, que sera exibido entre os tres primeiros colocados. 
+Stack utilizada
+Front-end: HTML, CSS, JavaScript, Bootstrap
 
-
-
-
-## Stack utilizada
-
-**Front-end:** HTML, CSS, JavaScript, Bootstrap
-
-**Back-end:** express,sequelize,mysq
+Back-end: express,sequelize,mysq
