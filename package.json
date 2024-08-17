@@ -23,6 +23,6 @@
     "node-fetch-commonjs": "^3.3.2",
     "postgres": "^3.4.3",
     "sequelize": "^6.35.0",
-    "tedious": "^16.6.0"
+    "tedious": "^18.3.0"
   }
 }
