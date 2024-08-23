@@ -7,4 +7,4 @@ Esse projeto foi feito em parceria com as turmas do curso de administralção da
 Stack utilizada
 Front-end: HTML, CSS, JavaScript, Bootstrap
 
-Back-end: express,sequelize,mysq
+Back-end: express,sequelize,mysq, nodeJS
